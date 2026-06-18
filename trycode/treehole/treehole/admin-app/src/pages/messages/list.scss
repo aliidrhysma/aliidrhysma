@@ -1,0 +1,115 @@
+.messages-list-container {
+  min-height: 100vh;
+  background-color: #F5F6F7;
+}
+
+.tabs {
+  display: flex;
+  background-color: #fff;
+  padding: 20px 30px;
+  gap: 20px;
+}
+
+.tab {
+  flex: 1;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F5F6F7;
+  border-radius: 12px;
+  font-size: 28px;
+  color: #636E72;
+}
+
+.tab.active {
+  background-color: #6C5CE7;
+  color: #fff;
+}
+
+.list {
+  padding: 20px 30px;
+}
+
+.message-card {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 20px;
+}
+
+.msg-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.msg-header .sender,
+.msg-header .coord {
+  font-size: 24px;
+  color: #636E72;
+}
+
+.msg-content {
+  padding: 16px 0;
+  border-top: 1px solid #EEE;
+  border-bottom: 1px solid #EEE;
+  font-size: 28px;
+  color: #2D3436;
+  line-height: 1.6;
+}
+
+.msg-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.msg-footer .time {
+  font-size: 22px;
+  color: #B2BEC3;
+}
+
+.msg-footer .actions {
+  display: flex;
+  gap: 16px;
+}
+
+.action-btn {
+  padding: 0 24px;
+  height: 56px;
+  font-size: 24px;
+  border-radius: 8px;
+  border: none;
+  line-height: 56px;
+}
+
+.action-btn.approve {
+  background-color: #E8F8F5;
+  color: #00B894;
+}
+
+.action-btn.reject {
+  background-color: #FDEDEC;
+  color: #E74C3C;
+}
+
+.action-btn.delete {
+  background-color: #FEF5E7;
+  color: #F39C12;
+}
+
+.load-more {
+  text-align: center;
+  padding: 30px;
+  color: #636E72;
+  font-size: 26px;
+}
+
+.empty {
+  text-align: center;
+  padding: 100px 0;
+  color: #B2BEC3;
+  font-size: 28px;
+}

@@ -1,0 +1,132 @@
+.dashboard-container {
+  min-height: 100vh;
+  background-color: #F5F6F7;
+}
+
+.header {
+  background-color: #2D3436;
+  padding: 40px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.header .title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.header .admin-name {
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.logout-btn {
+  padding: 12px 24px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  color: #fff;
+  font-size: 24px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 30px;
+  margin-top: -20px;
+}
+
+.stat-card {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.stat-card.warning {
+  border: 2px solid #FF6B6B;
+}
+
+.stat-icon {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.stat-info {
+  text-align: center;
+}
+
+.stat-value {
+  font-size: 40px;
+  font-weight: bold;
+  color: #2D3436;
+  display: block;
+}
+
+.stat-label {
+  font-size: 24px;
+  color: #636E72;
+  margin-top: 4px;
+  display: block;
+}
+
+.stat-today {
+  font-size: 22px;
+  color: #00B894;
+  margin-top: 8px;
+  display: block;
+}
+
+.stat-today.pending {
+  color: #FF6B6B;
+}
+
+.quick-actions {
+  padding: 0 30px;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #2D3436;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.action-list {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 10px 0;
+}
+
+.action-item {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  border-bottom: 1px solid #EEE;
+}
+
+.action-item:last-child {
+  border-bottom: none;
+}
+
+.action-item .icon {
+  font-size: 40px;
+  margin-right: 20px;
+}
+
+.action-item .label {
+  font-size: 28px;
+  color: #2D3436;
+}

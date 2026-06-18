@@ -1,0 +1,164 @@
+.reports-list-container {
+  min-height: 100vh;
+  background-color: #F5F6F7;
+}
+
+.tabs {
+  display: flex;
+  background-color: #fff;
+  padding: 20px 30px;
+  gap: 20px;
+}
+
+.tab {
+  flex: 1;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F5F6F7;
+  border-radius: 12px;
+  font-size: 28px;
+  color: #636E72;
+}
+
+.tab.active {
+  background-color: #E74C3C;
+  color: #fff;
+}
+
+.list {
+  padding: 20px 30px;
+}
+
+.report-card {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 20px;
+  border-left: 6px solid #E74C3C;
+}
+
+.report-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.type-tag {
+  padding: 6px 16px;
+  background-color: #FDEDEC;
+  color: #E74C3C;
+  border-radius: 6px;
+  font-size: 22px;
+}
+
+.report-header .time {
+  font-size: 22px;
+  color: #B2BEC3;
+}
+
+.report-info {
+  background-color: #F9F9F9;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.info-row {
+  display: flex;
+  margin-bottom: 8px;
+}
+
+.info-row:last-child {
+  margin-bottom: 0;
+}
+
+.info-row .label {
+  font-size: 24px;
+  color: #636E72;
+  width: 100px;
+}
+
+.info-row .value {
+  font-size: 24px;
+  color: #2D3436;
+}
+
+.info-row .value.danger {
+  color: #E74C3C;
+}
+
+.reason {
+  margin-bottom: 16px;
+}
+
+.reason-label {
+  font-size: 24px;
+  color: #636E72;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.reason-text {
+  font-size: 28px;
+  color: #2D3436;
+  line-height: 1.5;
+}
+
+.actions {
+  display: flex;
+  gap: 16px;
+  padding-top: 16px;
+  border-top: 1px solid #EEE;
+}
+
+.action-btn {
+  flex: 1;
+  padding: 0;
+  height: 64px;
+  font-size: 24px;
+  border-radius: 8px;
+  border: none;
+  line-height: 64px;
+}
+
+.action-btn.dismiss {
+  background-color: #F5F6F7;
+  color: #636E72;
+}
+
+.action-btn.warn {
+  background-color: #FEF5E7;
+  color: #F39C12;
+}
+
+.action-btn.freeze {
+  background-color: #FDEDEC;
+  color: #E74C3C;
+}
+
+.handle-result {
+  padding-top: 16px;
+  border-top: 1px solid #EEE;
+}
+
+.result-text {
+  font-size: 24px;
+  color: #00B894;
+}
+
+.load-more {
+  text-align: center;
+  padding: 30px;
+  color: #636E72;
+  font-size: 26px;
+}
+
+.empty {
+  text-align: center;
+  padding: 100px 0;
+  color: #B2BEC3;
+  font-size: 28px;
+}

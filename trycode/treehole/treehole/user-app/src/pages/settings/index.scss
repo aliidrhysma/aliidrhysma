@@ -1,0 +1,118 @@
+.settings-container {
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  padding: 30px;
+}
+
+.section {
+  background-color: #fff;
+  border-radius: 20px;
+  margin-bottom: 24px;
+  overflow: hidden;
+}
+
+.section-title {
+  font-size: 24px;
+  color: var(--text-secondary);
+  padding: 24px 30px 12px;
+  display: block;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.menu-item:last-child {
+  border-bottom: none;
+}
+
+.menu-item .label {
+  flex: 1;
+  font-size: 28px;
+  color: var(--text-primary);
+}
+
+.menu-item .value {
+  font-size: 28px;
+  color: var(--text-secondary);
+  margin-right: 16px;
+}
+
+.menu-item .arrow {
+  font-size: 32px;
+  color: var(--text-placeholder);
+}
+
+.menu-item.danger .label {
+  color: var(--error-color);
+}
+
+.edit-section {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.input-label {
+  font-size: 28px;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+  display: block;
+}
+
+.nickname-input {
+  width: 100%;
+  height: 88px;
+  padding: 0 24px;
+  background-color: var(--bg-color);
+  border-radius: 16px;
+  font-size: 28px;
+}
+
+.edit-actions {
+  display: flex;
+  gap: 24px;
+}
+
+.edit-actions .cancel-btn {
+  flex: 1;
+  height: 88px;
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  font-size: 32px;
+  border-radius: 44px;
+  border: none;
+}
+
+.edit-actions .save-btn {
+  flex: 1;
+  height: 88px;
+  background: linear-gradient(135deg, var(--theme-color), var(--theme-color-dark));
+  color: #fff;
+  font-size: 32px;
+  border-radius: 44px;
+  border: none;
+}
+
+.logout-btn {
+  width: 100%;
+  height: 88px;
+  background-color: #fff;
+  color: var(--error-color);
+  font-size: 32px;
+  border-radius: 44px;
+  border: none;
+  margin-top: 30px;
+}
+
+.version {
+  display: block;
+  text-align: center;
+  font-size: 24px;
+  color: var(--text-placeholder);
+  margin-top: 40px;
+}

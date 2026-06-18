@@ -1,0 +1,68 @@
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: treehole-mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root123
+      MYSQL_DATABASE: treehole
+      MYSQL_USER: treehole
+      MYSQL_PASSWORD: treehole123
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql-data:/var/lib/mysql
+      - ./backend/sql/init.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - treehole-network
+
+  redis:
+    image: redis:6-alpine
+    container_name: treehole-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+    networks:
+      - treehole-network
+
+  api:
+    build: ./backend
+    container_name: treehole-api
+    ports:
+      - "3000:3000"
+    environment:
+      DB_HOST: mysql
+      DB_PORT: 3306
+      DB_USER: treehole
+      DB_PASSWORD: treehole123
+      DB_NAME: treehole
+      REDIS_HOST: redis
+      REDIS_PORT: 6379
+      JWT_SECRET: treehole-secret-key-change-in-production
+      NODE_ENV: production
+    depends_on:
+      - mysql
+      - redis
+    networks:
+      - treehole-network
+    restart: unless-stopped
+
+  nginx:
+    image: nginx:alpine
+    container_name: treehole-nginx
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+    depends_on:
+      - api
+    networks:
+      - treehole-network
+
+volumes:
+  mysql-data:
+  redis-data:
+
+networks:
+  treehole-network:
+    driver: bridge

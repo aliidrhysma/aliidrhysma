@@ -1,0 +1,121 @@
+.message-detail-container {
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  padding: 30px;
+}
+
+.message-card {
+  background-color: #fff;
+  border-radius: 24px;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.sender-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.sender-info .avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: var(--theme-color-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  color: #fff;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.sender-info .info {
+  display: flex;
+  flex-direction: column;
+}
+
+.sender-info .nickname {
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.sender-info .time {
+  font-size: 24px;
+  color: var(--text-secondary);
+}
+
+.content {
+  padding: 20px 0;
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.content .text {
+  font-size: 30px;
+  line-height: 1.8;
+  color: var(--text-primary);
+}
+
+.content .images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.content .images .image {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 24px;
+}
+
+.action-item {
+  display: flex;
+  align-items: center;
+}
+
+.action-item .icon {
+  font-size: 32px;
+  margin-right: 8px;
+}
+
+.action-item .label {
+  font-size: 26px;
+  color: var(--text-secondary);
+}
+
+.replies-section {
+  background-color: #fff;
+  border-radius: 24px;
+  padding: 30px;
+}
+
+.section-title {
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--text-primary);
+  margin-bottom: 24px;
+  display: block;
+}
+
+.empty-replies {
+  text-align: center;
+  padding: 60px 0;
+  color: var(--text-placeholder);
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: var(--text-secondary);
+}

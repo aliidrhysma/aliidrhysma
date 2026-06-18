@@ -1,0 +1,169 @@
+.users-list-container {
+  min-height: 100vh;
+  background-color: #F5F6F7;
+}
+
+.header-bar {
+  background-color: #fff;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #EEE;
+}
+
+.header-bar .title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #2D3436;
+}
+
+.header-bar .total {
+  font-size: 26px;
+  color: #636E72;
+}
+
+.list {
+  padding: 20px 30px;
+}
+
+.user-card {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 20px;
+}
+
+.user-info {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.user-info .avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #6C5CE7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  color: #fff;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.user-info .info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.user-info .nickname {
+  font-size: 30px;
+  font-weight: bold;
+  color: #2D3436;
+  margin-bottom: 4px;
+}
+
+.user-info .user-id {
+  font-size: 24px;
+  color: #636E72;
+  margin-bottom: 4px;
+}
+
+.user-info .time {
+  font-size: 22px;
+  color: #B2BEC3;
+}
+
+.status {
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 22px;
+}
+
+.status-normal {
+  background-color: #E8F8F5;
+  color: #00B894;
+}
+
+.status-frozen {
+  background-color: #FEF5E7;
+  color: #F39C12;
+}
+
+.status-banned {
+  background-color: #FDEDEC;
+  color: #E74C3C;
+}
+
+.user-stats {
+  display: flex;
+  gap: 40px;
+  padding: 20px 0;
+  border-top: 1px solid #EEE;
+  border-bottom: 1px solid #EEE;
+  margin-bottom: 20px;
+}
+
+.user-stats .stat {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-stats .value {
+  font-size: 32px;
+  font-weight: bold;
+  color: #2D3436;
+}
+
+.user-stats .label {
+  font-size: 22px;
+  color: #636E72;
+}
+
+.actions {
+  display: flex;
+  gap: 16px;
+}
+
+.action-btn {
+  flex: 1;
+  height: 64px;
+  font-size: 26px;
+  border-radius: 8px;
+  border: none;
+  padding: 0;
+  line-height: 64px;
+}
+
+.action-btn.freeze {
+  background-color: #FEF5E7;
+  color: #F39C12;
+}
+
+.action-btn.unfreeze {
+  background-color: #E8F8F5;
+  color: #00B894;
+}
+
+.action-btn.ban {
+  background-color: #FDEDEC;
+  color: #E74C3C;
+}
+
+.load-more {
+  text-align: center;
+  padding: 30px;
+  color: #636E72;
+  font-size: 26px;
+}
+
+.empty {
+  text-align: center;
+  padding: 100px 0;
+  color: #B2BEC3;
+  font-size: 28px;
+}
